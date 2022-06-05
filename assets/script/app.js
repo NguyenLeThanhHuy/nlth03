@@ -1,7 +1,7 @@
 // Begin: Loading Jquery
 
 $(window).on('load', function(event) {
-    $('.loading').delay(1000).fadeOut('fast');
+    $('.loading').delay(300).fadeOut('fast');
 })
 
 // End: Loading Jquery
