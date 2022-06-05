@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Info</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="./assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+            />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+</head>
+
+<body>
+
+    <!--Begin: Loading -->
+
+    <div class="loading">
+        <div class="loading-item"></div>
+    </div>
+
+    <!--End: Loading -->
+
+    <!--Begin: App -->
+
+    <div class="app">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" behavior="" direction="">Chào mừng bạn đến với
+            WebSite của tôi | Ngày tạo: 1/6/2022 - Ngày cập nhật: 5/6/2022</marquee>
+
+        <div class="grid wide">
+            <!-- Begin: Header -->
+            <div class="row header">
+                <!-- Left -->
+                <div class="header__left col l-6 m-12 c-12">
+                    <div class="row">
+
+                        <div class="header__left-avatar col l-4 m-4 c-12">
+                            <img src="./assets/img/yamepts.jpg" class="header__left-img" alt="Avatar">
+                        </div>
+
+                        <div class="header__left-social-name col l-8 m-8 c-12">
+                            <h1 class="header__left-name">Nguyễn Lê Thanh Huy</h1>
+                            <div class="header__left-description">"Say no to girls"</div>
+                            <div class="header__left-socials">
+                                <a href="https://www.facebook.com/nguyenlethanhhuy712" target="_blank"
+                                    class="header__left-icon">
+                                    <i class="fa-brands fa-facebook-f header__left-socials--fb"></i>
+                                </a>
+                                <a href="https://m.me/nguyenlethanhhuy712" target="_blank" class="header__left-icon">
+                                    <i class="fa-brands fa-facebook-messenger header__left-socials--mes"></i>
+                                </a>
+                                <a href="https://zalo.me/868073554" target="_blank" class="header__left-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="header__left-socials--svg"
+                                        id="Layer_1" fill="#4169e1" viewBox="0 0 460.1 436.6" width="30" height="30">
+                                        <style>
+                                            .st0 {
+                                                fill: #fdfefe
+                                            }
+
+                                            .st1 {
+                                                fill: #0180c7
+                                            }
+
+                                            .st2 {
+                                                fill: #0172b1
+                                            }
+
+                                            .st3 {
+                                                fill: none;
+                                                stroke: #0180c7;
+                                                stroke-width: 2;
+                                                stroke-miterlimit: 10
+                                            }
+                                        </style>
+                                        <title>logo-zalo-vector</title>
+                                        <path class="st0"
+                                            d="M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z" />
+                                        <path class="st1"
+                                            d="M139.5 436.2c-27.3 0-54.7.9-82-.1-32.3-1.3-57-28.4-57-60.7 0-104.3.2-208.6 0-313C.5 26.7 28.4 1.8 60.5.9c33.6-.9 67.3-.2 101-.2.6 0 1.4-.3 1.7.7-.2 1.8-2 2-3.1 2.7-19.8 11.6-37.9 25.5-53.1 42.7-25.1 28.4-42.5 61-48.4 98.9-10.4 66.9 10.5 123.7 57.8 171.1 8.4 8.5 9.5 15.1 2.8 26.5-8.1 13.7-20.4 23-33.5 31.5-1.4.8-2.8 1.8-4.2 2.7-2.1 1.8-.8 2.7 1 3.5.4.9.9 1.7 1.5 2.5 11.5 10.2 22.4 21.1 33.7 31.5 5.3 4.9 10.6 10 15.7 15.1 2.1 1.9 5.6 2.5 6.1 6.1z" />
+                                        <path class="st2"
+                                            d="M139.5 436.2c-.5-3.5-4-4.1-6.1-6.2-5.1-5.2-10.4-10.2-15.7-15.1-11.3-10.4-22.2-21.3-33.7-31.5-.6-.8-1.1-1.6-1.5-2.5 25.5 5 50.4 1.6 74.9-5.9 8.3-2.5 16.6-5 25-7.1 5.7-1.5 11.7-1.2 17.2.8 63.4 21.8 126 19.8 187.6-7.2 25.1-11.1 48-26.7 67.4-46.2 1-1 1.7-2.5 3.5-2.6.9 1.4.4 2.9.4 4.4v58.5c.2 33.4-26.6 60.6-60 60.9h-.5c-36 .2-72 0-108 0H145.5c-2-.2-4-.3-6-.3z" />
+                                        <path class="st1"
+                                            d="M155.1 212.4c15.1 0 29.3-.1 43.4 0 7.9.1 12.2 3.4 13 9.7.9 7.9-3.7 13.2-12.3 13.3-16.2.2-32.3.1-48.5.1-4.7 0-9.3.2-14-.1-5.8-.3-11.5-1.5-14.3-7.5s-.8-11.4 3-16.3c15.4-19.6 30.9-39.3 46.4-58.9.9-1.2 1.8-2.4 2.7-3.5-1-1.7-2.4-.9-3.6-1-10.8-.1-21.7 0-32.5-.1-2.5 0-5-.3-7.4-.8-5.7-1.3-9.2-7-7.9-12.6.9-3.8 3.9-6.9 7.7-7.8 2.4-.6 4.9-.9 7.4-.9 17.8-.1 35.7-.1 53.5 0 3.2-.1 6.3.3 9.4 1.1 6.8 2.3 9.7 8.6 7 15.2-2.4 5.7-6.2 10.6-10 15.5-13.1 16.7-26.2 33.3-39.3 49.8-1.1 1.3-2.1 2.6-3.7 4.8z" />
+                                        <path class="st1"
+                                            d="M271.1 159.8c2.4-3.1 4.9-6 9-6.8 7.9-1.6 15.3 3.5 15.4 11.5.3 20 .2 40 0 60 0 5.2-3.4 9.8-8.3 11.3-5 1.9-10.7.4-14-3.9-1.7-2.1-2.4-2.5-4.8-.6-9.1 7.4-19.4 8.7-30.5 5.1-17.8-5.8-25.1-19.7-27.1-36.6-2.1-18.3 4-33.9 20.4-43.5 13.6-8.1 27.4-7.4 39.9 3.5zm-35.4 36.5c.2 4.4 1.6 8.6 4.2 12.1 5.4 7.2 15.7 8.7 23 3.3 1.2-.9 2.3-2 3.3-3.3 5.6-7.6 5.6-20.1 0-27.7-2.8-3.9-7.2-6.2-11.9-6.3-11-.7-18.7 7.8-18.6 21.9zM340.4 196.9c-.8-25.7 16.1-44.9 40.1-45.6 25.5-.8 44.1 16.3 44.9 41.3.8 25.3-14.7 43.2-38.6 45.6-26.1 2.6-46.8-16.3-46.4-41.3zm25.1-2.4c-.2 5 1.3 9.9 4.3 14 5.5 7.2 15.8 8.6 23 3 1.1-.8 2-1.8 2.9-2.8 5.8-7.6 5.8-20.4.1-28-2.8-3.8-7.2-6.2-11.9-6.3-10.8-.6-18.4 7.6-18.4 20.1zM331.6 177c0 15.5.1 31 0 46.5.1 7.1-5.5 13-12.6 13.2-1.2 0-2.5-.1-3.7-.4-5-1.3-8.8-6.6-8.8-12.9v-79.5c0-4.7-.1-9.3 0-14 .1-7.7 5-12.7 12.4-12.7 7.6-.1 12.7 4.9 12.7 12.9.1 15.6 0 31.3 0 46.9z" />
+                                        <path class="st0"
+                                            d="M235.7 196.3c-.1-14.1 7.6-22.6 18.5-22 4.7.2 9.1 2.5 11.9 6.4 5.6 7.5 5.6 20.1 0 27.7-5.4 7.2-15.7 8.7-23 3.3-1.2-.9-2.3-2-3.3-3.3-2.5-3.5-3.9-7.7-4.1-12.1zM365.5 194.5c0-12.4 7.6-20.7 18.4-20.1 4.7.1 9.1 2.5 11.9 6.3 5.7 7.6 5.7 20.5-.1 28-5.6 7.1-16 8.3-23.1 2.7-1.1-.8-2-1.8-2.8-2.9-3-4.1-4.4-9-4.3-14z" />
+                                        <path class="st3"
+                                            d="M66 1h328.1c35.9 0 65 29.1 65 65v303c0 35.9-29.1 65-65 65H66c-35.9 0-65-29.1-65-65V66C1 30.1 30.1 1 66 1z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/NguyenLeThanhHuy/nlth03" target="_blank"
+                                    class="header__left-icon">
+                                    <i class="fa-brands fa-github header__left-socials--git"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="header__right col l-6 m-12 c-12">
+                    <div class="row">
+                        <div class="header__right-info col l-7 m-7 c-12">
+                            <h3 class="header__right-info--label">EMAIL
+                                <p>nguyenlethanhhuy2003@gmail.com</p>
+                            </h3>
+                            <h3 class="header__right-info--label">NGÀY SINH
+                                <p>07/12/2003</p>
+                            </h3>
+
+                        </div>
+
+                        <div class="header__right-info col l-5 m-5 c-12">
+                            <h3 class="header__right-info--label">SỐ ĐIỆN THOẠI
+                                <p>0868073554</p>
+                            </h3>
+                            <h3 class="header__right-info--label">QUÊ QUÁN
+                                <p>Tân Phước - Tiền Giang</p>
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Header -->
+
+            <!-- Begin: Main -->
+
+            <div class="row main">
+                <div class="col l-2 m-12 c-12 main__selection-all">
+                    <div class="main__selection">
+
+                        <!-- Item 1 -->
+                        <div class="main__selection--item active">
+                            <a href="#info">
+                                <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="hover"
+                                    colors="primary:#121331,secondary:#08a88a" style="width:70px;height:70px">
+                                </lord-icon>
+                                <p>Bản Thân</p>
+                            </a>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="main__selection--item">
+                            <a href="#result">
+                                <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="hover"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                                <p>Kết Quả</p>
+                            </a>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="main__selection--item">
+                            <a href="#self">
+                                <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/iltqorsz.json" trigger="hover"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                                <p>Mục Tiêu</p>
+                            </a>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="main__selection--item">
+                            <a href="#like">
+                                <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                                <lord-icon src="https://cdn.lordicon.com/rjzlnunf.json" trigger="hover"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                                <p>Yêu Thích</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l-10 m-12 c-12 main__content-all">
+
+                    <!-- Begin: Info -->
+                    <div id="info" class="main__content active">
+                        <div class="main__content-info">
+                            <div class="main__content-info--title">
+                                <h1>Giới Thiệu !</h1>
+                            </div>
+                            <div class="main__content-info--description">
+                                <p>Tháng 6/2021 Cuối năm cấp 3 nhưng không còn hứng thú để học tiếp.</p>
+                                <br>
+                                <p>Tháng 9/2021 Sau đó quyết tâm thay đổi bằng con đường Cao Đẳng. </p>
+                                <br>
+    
+                                <p>Tháng 1/2022 Tự tìm tòi học hỏi và viết được những dòng code cơ bản.</p>
+                                <br>
+                                <p>Từ đó đến nay cũng được năm tháng và trang Web này là nột trong số sản phẩm được viết
+                                    bởi những kiến thức học qua internet chủ yếu qua trang
+                                    https://completejavascript.com/ và hai kênh Youtube F8-FullStack và Evondev</p>
+                            </div>
+
+                            <div class="main__content-info--description">
+                              <h1>Một số câu nói ảnh hưởng đến thế giới quan của mình!</h1>
+                            </div>
+                                    <!-- Slider -->
+                                     <div class="main__content-slide">
+                                        <div class="row slider">
+                                            <!-- Item 1 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                    <div class="row">
+                                                        <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                            <img src="./assets/img/tien-bip.jpeg" alt="Thầy Tiến" class="main__content-slide-img">
+                                                          </div>
+                            
+                                                          <div class="main__content-slide-content col l-10 m-9 c-12 ">
+                                                              <h1>Thầy Tiến Bịp
+                        
+                                                              </h1>
+                                                              <p>“Những thằng đểu không đáng sợ đâu, những người xấu không hề đáng sợ. Chỉ đáng sợ nhất là những người giả vờ tốt thôi.”</p>
+                                                    </div>
+                                                    </div>
+                                            </div>
+
+                                            <!-- Item 2 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                <div class="row">
+                                                    <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                        <img src="./assets/img/Joker.jpg" alt="Joker" class="main__content-slide-img">
+                                                      </div>
+                        
+                                                      <div class="main__content-slide-content col l-10 m-9 c-12">
+                                                          <h1>(Joker - The Dark Knight, 2008)
+                    
+                                                          </h1>
+                                                          <p>“Nếu bạn giỏi một thứ gì đó, đừng bao giờ làm nó miễn phí.”</p>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Item 3 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                <div class="row">
+                                                    <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                        <img src="./assets/img/ngan-ngu-hay.jpeg" alt="Khuyết Danh" class="main__content-slide-img">
+                                                      </div>
+                        
+                                                      <div class="main__content-slide-content col l-10 m-9 c-12">
+                                                          <h1>Khuyết Danh
+                    
+                                                          </h1>
+                                                          <p>“Đến việc nhỏ bạn làm còn không tốt sao người ta tin bạn có thể làm được việc lớn.”</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <!-- Item 4 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                <div class="row">
+                                                    <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                        <img src="./assets/img/the-godfather.jpeg" alt="The Godfather" class="main__content-slide-img">
+                                                      </div>
+                        
+                                                      <div class="main__content-slide-content col l-10 m-9 c-12">
+                                                          <h1>The Godfather
+                    
+                                                          </h1>
+                                                          <p>“Sức khỏe tốt là điều quan trọng nhất, hơn cả thành công, hơn cả tiền bạc, hơn cả quyền lực..”</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <!-- item 5 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                <div class="row">
+                                                    <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                        <img src="./assets/img/jvevermind.jpeg" alt="Jvevermind" class="main__content-slide-img">
+                                                      </div>
+                        
+                                                      <div class="main__content-slide-content col l-10 m-9 c-12">
+                                                          <h1>Jvevermind
+                    
+                                                          </h1>
+                                                          <p>“Công bằng là giấc mơ của kẻ yếu, người tỉnh táo nhất chính là kẻ mạnh nhất, kẻ mạnh nhất chính là người thành công nhất.”</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <!-- Item 6 -->
+                                            <div class="main__content-slide-item col l-12 m-12 c-12">
+                                              
+                                                <div class="row">
+                                                    <div class="main__content-slide-img col l-2 m-3 c-12">
+                                                        <img src="./assets/img/ton-tu.jpeg" alt="Tôn Tử" class="main__content-slide-img">
+                                                      </div>
+                        
+                                                      <div class="main__content-slide-content col l-10 m-9 c-12">
+                                                          <h1>Tôn Tử
+                    
+                                                          </h1>
+                                                          <p>“Tiên hạ thủ vi cường, hậu thủ vi tai ương.”</p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                            </div>
+                        </div>
+
+                    <!-- End: Info -->
+                    
+                    <!-- Begin: Result -->
+                    <div id="result" class="main__content ">
+                        <div class="main__content-result">
+                            <div class="main__content-result--title">
+                                <h1>Một Số Project Của Tôi !</h1>
+                            </div>
+
+                           <div class="row main__content-result">
+                               <!-- Item 1 -->
+                               <div class="col l-6 m-6 c-12 main__content-result-item">
+                                  <div class="main__content-result-card">
+                                    <div class="main__content-resull-card-img">
+                                        <a href="https://nguyenlethanhhuy.github.io/F8Shopee/" target="_blank" class="main__content-result-img-link">
+                                            <img src="./assets/img/shopee.PNG" alt="WebSite Shopee">
+                                        </a>
+                                    </div>
+
+                                    <div class="main__content-result--hover">
+                                        <div class="main__content-result--hover-languege">
+                                            Ngôn ngữ: HTML-CSS-JS
+                                        </div>
+                                        <div class="main__content-result--hover-framework">
+                                            Thư viện/ Framework: Không
+                                        </div>
+                                        <div class="main__content-result--hover-source-code">
+                                            <a href="https://github.com/NguyenLeThanhHuy/F8Shopee">
+                                                Source Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="main__content-result-link">
+                                    <a href="https://nguyenlethanhhuy.github.io/F8Shopee/" target="_blank" >
+                                        WebSite Shopee
+                                    </a>
+                                  </div>
+                               </div>
+                               <!-- Item 2 -->
+                               <div class="col l-6 m-6 c-12 main__content-result-item">
+                                  <div class="main__content-result-card">
+                                    <div class="main__content-resull-card-img">
+                                        <a href="https://nguyenlethanhhuy.github.io/F8-TheBand/" target="_blank" class="main__content-result-img-link">
+                                            <img src="./assets/img/theband.PNG" alt="WebSite The Band">
+                                        </a>
+                                    </div>
+
+                                    <div class="main__content-result--hover">
+                                        <div class="main__content-result--hover-languege">
+                                            Ngôn ngữ: HTML-CSS-JS
+                                        </div>
+                                        <div class="main__content-result--hover-framework">
+                                            Thư viện/ Framework: Không
+                                        </div>
+                                        <div class="main__content-result--hover-source-code">
+                                            <a href="https://github.com/NguyenLeThanhHuy/F8-TheBand" target="_blank">
+                                                Source Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="main__content-result-link">
+                                    <a href="https://nguyenlethanhhuy.github.io/F8-TheBand/" target="_blank" >
+                                        WebSite The Band
+                                    </a>
+                                  </div>
+                               </div>
+                               <!-- Item 3-->
+                               <div class="col l-6 m-6 c-12 main__content-result-item">
+                                  <div class="main__content-result-card">
+                                    <div class="main__content-resull-card-img">
+                                        <a href="https://nguyenlethanhhuy.github.io/nlth2003-clock/" target="_blank" class="main__content-result-img-link">
+                                            <img src="./assets/img/clock.png" alt="WebSite Clock">
+                                        </a>
+                                    </div>
+
+                                    <div class="main__content-result--hover">
+                                        <div class="main__content-result--hover-languege">
+                                            Ngôn ngữ: HTML-CSS-JS
+                                        </div>
+                                        <div class="main__content-result--hover-framework">
+                                            Thư viện/ Framework: Không
+                                        </div>
+                                        <div class="main__content-result--hover-source-code">
+                                            <a href="https://github.com/NguyenLeThanhHuy/nlth2003-clock" target="_blank">
+                                                Source Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="main__content-result-link">
+                                    <a href="https://nguyenlethanhhuy.github.io/nlth2003-clock/" target="_blank" >
+                                        WebSite Clock
+                                    </a>
+                                  </div>
+                               </div>
+                               <!-- Item 4 -->
+                               <div class="col l-6 m-6 c-12 main__content-result-item">
+                                  <div class="main__content-result-card">
+                                    <div class="main__content-resull-card-img">
+                                        <a href="https://nguyenlethanhhuy.github.io/A-Mother-s-Gift/" target="_blank" class="main__content-result-img-link">
+                                            <img src="./assets/img/A-Mother's-Gift.PNG" alt="A Mother's Gift">
+                                        </a>
+                                    </div>
+
+                                    <div class="main__content-result--hover">
+                                        <div class="main__content-result--hover-languege">
+                                            Ngôn ngữ: HTML-CSS-JS
+                                        </div>
+                                        <div class="main__content-result--hover-framework">
+                                            Thư viện/ Framework: Không
+                                        </div>
+                                        <div class="main__content-result--hover-source-code">
+                                            <a href="https://github.com/NguyenLeThanhHuy/A-Mother-s-Gift" target="_blank">
+                                                Source Code
+                                            </a>
+                                        </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="main__content-result-link">
+                                    <a href="https://nguyenlethanhhuy.github.io/A-Mother-s-Gift/" target="_blank" >
+                                        A Mother's Gift (Chưa responsive)
+                                    </a>
+                                  </div>
+                               </div>
+                             
+                           </div>
+                        </div>
+                    </div>
+                    <!-- End: Result -->
+
+                    <!-- Begin: Self -->                  
+                    <div id="target" class="main__content ">
+                        <div class="main__content-target">
+                            <div class="main__content-target--title">
+                                <h1>Mục Tiêu!</h1>
+                            </div>
+
+                            <!-- Item 1 -->
+                            <div class="main__content-info--description">
+                               <div class="main__content-target--head-item">
+                                <div class="main__content-target--head">
+                                    Học HTML - CSS - Javascript cơ bản
+                                </div>
+                                <div class="main__content-target--result">
+                                    01/03/2022(Hoàn Thành)
+                                </div>
+                                <div class="main__content-target--text-des">
+                                 Là ngôn ngữ để bắt đầu bước vào con đường lập trình HTML và CSS có mối tương quan mật thiết. HTML là nền tảng của site và CSS giúp định hình phong cách (tất cả những gì tạo nên giao diện website). Hai yếu tố này hoàn toàn không thể tách rời. HTML đóng vai trò cung cấp cấu trúc nội dung và xác định nội dung đó. Các nội dung này có thể kể đến như tiêu đề, đoạn văn hoặc hình ảnh.
+                                </div>
+                               </div>
+                               <!-- Item 2 -->
+                               <div class="main__content-target--head-item">
+                                <div class="main__content-target--head">
+                                    Học sử dụng GIT và SASS
+                                </div>
+                                <div class="main__content-target--result">
+                                    01/05/2022(Hoàn Thành)
+                                </div>
+                                <div class="main__content-target--text-des">
+                                    Hiện nay, Git trở thành một trong các phần mềm quản lý mã nguồn phổ biến nhất. Việc biết sử dụng Git sẽ là lợi thế lớn với nhà tuyển dụng vì độ phổ biến và sự ứng dụng cao của nó. Với SASS, bạn có thể viết CSS theo thứ tự rõ ràng, quản lý các biến đã được định nghĩa sẵn, các class dùng chung hay có thể tự động nén tập tin CSS lại để bạn tiết kiệm dung lượng.
+                                </div>
+                               </div>
+                               <!-- Item 3 -->
+                               <div class="main__content-target--head-item">
+                                <div class="main__content-target--head">
+                                    Biết Sử Dụng Jquery và thuần thục Javascript
+                                </div>
+                                <div class="main__content-target--result">
+                                    01/07/2022(Đang thực hiện)
+                                </div>
+                                <div class="main__content-target--text-des">
+                                    Biết Sử Dụng Jquery và thuần thục Javascript
+                                </div>
+                               </div>
+                               <!-- Item 4 -->
+                               <div class="main__content-target--head-item">
+                                <div class="main__content-target--head">
+                                    Học ReactJS và luyện tập Javascript
+                                </div>
+                                <div class="main__content-target--result">
+                                    01/09/2022(Dự định)
+                                </div>
+                                <div class="main__content-target--text-des">ReactJS là yêu cầu thiết yếu của các nhà tuyển dụng Front End, nhằm nâng cao và tối ưu hoá UI. Bên cạch đó việc nâng khả năng Javascript càng quan trọng không kém, có khả năng viết tốt Javascript mới kết hợp được tất cả kiến thức tạo ra sự trơn tru mạch lạc.Trong thời gian này bản thân sẽ cố gắng luyện code nhiều nhất có thể, một tuần sẽ cố gắng cho ra một sản phẩm hoàn chỉnh và sẽ được đưa vào CV.</div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- End: Self -->
+
+                      <!-- Begin: Like -->
+                    <div id="like" class="main__content ">
+                        <div class="main__content-like">
+                            <div class="main__content-like--title">
+                                <h1>Sở Thích</h1>
+                            </div>
+                            <div class="main__content-like--description">
+
+                                <!-- Ngắm hoàng hôn -->
+
+                                <div class="main__content-like--description-item">
+                                    <div class="row">
+                                        <div class="col l-3 m-4 c-12">
+                                            <img src="./assets/img/hoanghon.png" alt="" class="main__content-like--img">
+                                        </div>
+                                        <div class="col l-9 m-8 c-12 main__content-like-text">
+                                            <h1 class="main__content-like--title">
+                                                Ngắm hoàng hôn
+                                            </h1>
+                                            <div class="main__content-like--text">
+                                                Thích ngắm bầu trời là kẻ mộng mơ , thích nghe nhạc cũ là kẻ nặng tình. Có những buổi chiều ta đơn phương dạo bước trên con đường đầy những chiếc lá khô rơi rụng ngắm nhìn khung cảnh chiều hoàng hôn lãng du, thả mình theo làn gió nhẹ đâu đó lướt ngang qua. Đôi khi, chỉ đơn giản như thế cũng đủ khiến ta cảm thấy thoải mái và yên bình đến lạ. Hoàng hôn với làn gió chiều lãng du khẽ lay động tâm hồn của kẻ suy tư gợi nhớ về những kỷ niệm tưởng chừng đã lắng sâu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Swimming -->
+                                <div class="main__content-like--description-item">
+                                    <div class="row">
+                                        <div class="col l-3 m-4 c-12">
+                                            <img src="./assets/img/swinming.jpg" alt="" class="main__content-like--img">
+                                        </div>
+                                        <div class="col l-9 m-8 c-12 main__content-like-text">
+                                            <h1 class="main__content-like--title">
+                                                Bơi Lội
+                                            </h1>
+                                            <div class="main__content-like--text">
+                                                Bơi lội là một trong những hoạt động thể lực đốt cháy hiệu quả nhất chất béo, giảm thiểu kích thước vòng hai, vòng ba và giúp cơ thể săn chắc; cải thiện và duy trì sức khỏe tốt, hơn hẳn mọi “thần dược”.
+                                                Trong khi bơi, áp suất nước tác động lên toàn bộ cơ thể có tác dụng như một bài massage giúp đẹp da; giảm đau nhức, mệt mỏi toàn cơ thể. Lực tác động của nước đối với cơ thể sẽ tác động tích cực lên hệ tim mạch; làm máu lưu thông, dung tích thở của người bơi được tăng lên.
+                                                Ngoài những lợi ích trên được chơi môn thể thao mà mình yêu thích thì không còn gì bằng.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Travel -->
+                                <div class="main__content-like--description-item">
+                                    <div class="row">
+                                        <div class="col l-3 m-4 c-12">
+                                            <img src="./assets/img/travel.jpg" alt="" class="main__content-like--img">
+                                        </div>
+                                        <div class="col l-9 m-8 c-12 main__content-like-text">
+                                            <h1 class="main__content-like--title">
+                                                Du lịch
+                                            </h1>
+                                            <div class="main__content-like--text">
+                                                Thư giãn đầu óc là lợi ích của việc đi du lịch dễ nhận thấy nhất. Hành trình đến một nơi xa, hòa cùng thiên nhiên, rừng biển sẽ giúp bạn tạm quên những mệt mỏi, muộn phiền. Bạn sẽ thấy thư giãn, dễ chịu và năng lượng như được tái tạo, bừng sức sống. Vậy nên mỗi khi cảm thấy mệt mỏi, nặng nề với cuộc sống thì hãy thu xếp tự thưởng cho bản thân một chuyến đi để refresh lại chính mình nhé. 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Quiet -->
+                                <div class="main__content-like--description-item">
+                                    <div class="row">
+                                        <div class="col l-3 m-4 c-12">
+                                            <img src="./assets/img/quiet.jpg" alt="" class="main__content-like--img">
+                                        </div>
+                                        <div class="col l-9 m-8 c-12 main__content-like-text">
+                                            <h1 class="main__content-like--title">
+                                                Yên tĩnh
+                                            </h1>
+                                            <div class="main__content-like--text">
+                                                Lão Tử đã từng nói: “Im lặng là nguồn sức mạnh khổng lồ.” Hãy dành một khoảng lặng trong một ngày ồn ào của bạn, hãy tôn vinh cuộc sống của bạn bằng cách luyện tập sự im lặng.
+                                                Ngoài sự vui chơi náo nhiệt bằng các môn thể theo, hay các thú vui khác thì tôi cũng như mọi người khác
+                                                cũng cần có khoảng không yên tĩnh cho bản thân mình. Những lúc đó tôi thường suy nghĩ về quá khứ và tương lai sau đó suy ra hiện tại mình cần làm những gì
+                                                ,nó sẽ giúp tôi có lại hứng thú cho các việc khác để cố gắng cho tương lai.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- End: Like -->
+                </div>
+            </div>
+
+            <!-- End: Main -->
+
+        </div>
+    </div>
+
+    <!--End: App -->
+
+
+    <!-- Begin:  Library -->
+
+    <script src="./assets/script/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+    integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- End:  Library -->
+    
+    <!-- Slick content -->
+
+    <script type="text/javascript">
+        $('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 4000,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+    });
+
+    // End: Slick content
+</script>
+
+</body>
+
+</html>

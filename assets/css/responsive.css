@@ -1,0 +1,178 @@
+/* Begin: Mobile & tablet */
+
+@media screen and (max-width: 63.9375em) {
+    .header__left {
+        border: none;
+    }
+
+    .main__selection {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .main__content-info--description p {
+        margin: 0;
+    }
+
+    .main__content-info--description h1 {
+        margin-top: 40px;
+    }
+}
+
+/* End: Mobile & tablet */
+
+
+
+/* Begin: Tablet */
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .main__content-like--text,
+    .main__content-target--text-des,
+    .main__content-info--description p {
+        font-size: 1.5rem;
+    }
+}
+
+/* End: Tablet */
+
+/* Begin: Mobile */
+
+@media screen and (max-width: 46.1875em) {
+    .header__left-avatar {
+        display: flex;
+        justify-content: center;
+        margin-top: -60px;
+        margin-bottom: 20px;
+    }
+
+    .header__left-social-name {
+        text-align: center;
+    }
+
+    .header__left-socials {
+        justify-content: center;
+    }
+
+    .main__selection {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
+
+    .main__selection--item {
+        margin-top: 0;
+        background-color: rgba(255, 255, 255, .9);
+        padding: 4px 5px;
+        border-radius: 10px;
+    }
+
+
+    lord-icon {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+    .main__content-slide-content {
+        text-align: center;
+    }
+
+    .main__content-slide-img img {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main__content-like-text {
+        text-align: center;
+    }
+
+    .main__content-like--text,
+    .main__content-target--text-des,
+    .main__content-info--description p,
+    .main__content-slide p {
+        font-size: 1.4rem;
+    }
+
+    .main__content-target--head,
+    .main__content-result-link a {
+        font-size: 2rem;
+    }
+
+    .main__content-like--img {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .main__content-result--title h1,
+    .main__content-target--title h1,
+    .main__content-like--title h1,
+    .main__content-info--title h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* End: Mobile */
+
+/* Begin media < 415 */
+@media screen and (max-width: 25.9375em) {
+    .header__left-icon {
+        margin: 0 6px;
+    }
+
+
+    lord-icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    
+    .main__content-info--description h1,
+    .main__content-info--title h1,
+    .main__content-result--title h1,
+    .main__content-target--title h1,
+    .main__content-like--title h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .main__content-target--head,
+    .main__content-result-link a,
+    .main__content-like--title{
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .main__content-target--text-des,
+    .main__content-info--description p,
+    .main__content-slide p,
+    .main__selection--item p,
+    .main__content-target--result,
+    .main__content-like--text {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+}
+
+/* End media < 415 */
+
+
+/* Begin: PC small */
+
+@media screen and (min-width: 64em) and (max-width: 77.4375em) {
+
+    .header__left-name,
+    .header__left-description,
+    .header__left-socials {
+        margin-left: 25px;
+    }
+
+}
+
+/* End: PC small */
